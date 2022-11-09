@@ -1,0 +1,36 @@
+.bc_col{
+    @include border('right', 4px, $line-color);
+}
+
+.bs_verde{
+    @include border('right', 3px, $line-color);
+    background-color: $secondary-color;
+}
+
+.bc_about_sup{
+    @include border('bottom', 10px, $line-color);
+    min-height: $alto-bloque-cent;
+}
+
+.b_titulo_ab{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.b_cent_ab{
+    @include border('top', 3px, $line-color);
+    @include border('bottom', 3px, $line-color);
+    font-family: $secondary-font;
+    font-size: 1.5rem;
+    overflow-y: auto;
+}
+
+.rect_inf{
+    min-height: 8%;
+}
+
+.rect_n{
+    @include border('left', 3px, $line-color);
+    @include border('right', 4px, $line-color);
+    background-color: $primary-color;
+}

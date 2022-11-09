@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+    background-color: $back-color;
+    &:before{
+        box-sizing: inherit;
+    }
+    &:after{
+        box-sizing: inherit;
+    }
+}
+
+html{
+	font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-family;
+	overflow-x: hidden;
+}
+
+a{ text-decoration: none; }
+
+ol, ul{
+    list-style: none;
+}
+
+input{
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.fadeIn2s {
+    @include fadeIn2s
+}
+.fadeIn3s {
+    @include fadeIn3s
+}
+.fadeIn4s {
+    @include fadeIn4s
+}

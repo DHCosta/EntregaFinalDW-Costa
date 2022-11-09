@@ -1,0 +1,93 @@
+.bloque_superior{
+    @include border('top', 4px, $line-color);
+    @include border('bottom', 10px, $line-color);
+    min-height: 10rem;
+}
+
+.bs_cen{
+    @include border('left', 3px, $line-color);
+    @include border('right', 3px, $line-color);
+}
+
+.bloque_central{
+    @include border('bottom', 10px, $line-color);
+    min-height: $alto-bloque-cent;
+}
+
+.bc_sup{
+    @include border('bottom', 4px, $line-color);
+    display: block;
+    height: 60%;
+    background-color: $secondary-color;
+}
+
+.bc_social{
+    @include border('left', 6px, $line-color);
+    @include border('right', 8px, $line-color);
+    a{
+        padding-bottom: 20px;
+    }
+}
+
+.bc_client{
+    @include border('right', 3px, $line-color);
+}
+
+.bc_ppal{
+    padding-right: 6.5rem !important;
+}
+
+.home_tit{
+    font-family: $primary-font;
+    line-height: 1em;
+    font-size: 7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: end;
+    padding: 8rem 0;
+}
+
+.home_tit_front{
+    font-size: 0.3em; 
+    font-weight: 600;  
+    line-height: 4.2rem;
+}
+
+.home_com{
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: end;
+    padding-left: 10rem;
+}
+
+.home_tit_com{
+    padding-bottom: 6rem;
+}
+
+.link_about{
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: $primary-color;
+    padding: 0.1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    &:hover{
+        font-weight: 700;
+        color: $primary-soft-color;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;    
+        width: 100%;
+        height: 0.2em;
+        background-color: $primary-color;
+        opacity: 1;
+    }
+}

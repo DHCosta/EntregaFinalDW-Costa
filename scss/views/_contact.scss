@@ -1,0 +1,52 @@
+.b_border {
+    @include border('right', 10px, $line-color);
+}
+
+.b_titulo_ct {
+    font-size: 14em;
+    font-weight: 900;
+    line-height: 16rem;
+    text-transform: uppercase;
+}
+
+.b_sub_titulo_ct {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.b_social {
+    @include border('right', 3px, $line-color);
+    padding: 30px;
+}
+
+.b_cent_ac {
+    @include border('top', 3px, $line-color);
+    @include border('bottom', 3px, $line-color);
+    font-family: $secondary-font;
+    background-color: $primary-color;
+    font-size: 1.5rem;
+}
+
+.formulario {
+    background: none;
+    div {
+        @extend .formulario;
+    }
+    label {
+        @extend .formulario;
+    }
+}
+
+.form-floating {
+    font-weight: 500 !important;
+}
+
+.inputfont {
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+}
+
+.txarea {
+    height: 100px !important;
+}
