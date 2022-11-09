@@ -39,13 +39,16 @@
 
 .b_titulo_w{
     font-size: 12rem;
+    font-weight: 800;
     text-transform: uppercase;
     background: none;
+    color: $font-color;
+    border-bottom: solid 15px #212427;
+
+    grid-column: 3 / 12;
+    grid-row: 1;
 
     z-index: 10;
-    position: absolute;
-    top: 10%;
-    left: 10%;
 }
 
 .det_w{
@@ -54,14 +57,21 @@
     font-size: 1.8em;
 }
 
-.imgWorkNoesarte{
-    max-width: 60rem !important;
-    z-index: 1;
-    position: absolute;
-    top: 23%;
-    left: 30%;
+main {
+    border-bottom: solid 10px #212427;
 }
 
-.cont_imgWorkNoesarte{
-    position: relative;
+.container-grid {
+    padding-top: 14rem;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0,1fr));
 }
+
+.cont_wnoesarte {
+    margin-top: -6rem;
+    grid-column: 5 / 12;
+    grid-row: 5;
+
+    z-index: 1;
+}
+
