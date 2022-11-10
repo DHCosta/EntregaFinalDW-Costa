@@ -222,7 +222,8 @@ nav {
   text-transform: uppercase;
   display: block;
   position: relative;
-  text-decoration: none; }
+  text-decoration: none;
+  margin-bottom: 2rem; }
   .link_about:hover {
     font-weight: 700;
     color: #d27252; }
@@ -304,7 +305,7 @@ nav {
   background: none;
   color: #212427;
   border-bottom: solid 15px #212427;
-  grid-column: 4 / 12;
+  grid-column: 4 / 11;
   grid-row: 1;
   z-index: 10; }
 
@@ -315,7 +316,7 @@ nav {
   background: none;
   color: #212427;
   border-bottom: solid 15px #212427;
-  grid-column: 2 / 9;
+  grid-column: 2 / 10;
   grid-row: 1;
   z-index: 10; }
 
@@ -333,7 +334,7 @@ main {
   grid-template-columns: repeat(12, minmax(0, 1fr)); }
 
 .cont_wnoesarte {
-  margin-top: -7rem;
+  margin-top: -5rem;
   grid-column: 5 / 12;
   grid-row: 5;
   z-index: 1; }
@@ -455,7 +456,7 @@ main {
     font-weight: 900;
     line-height: 4.5rem; }
   .b_titulo_ct {
-    font-size: 11em;
+    font-size: 11rem;
     line-height: 11rem; }
   .b_sub_titulo_ct {
     line-height: 4rem; } }

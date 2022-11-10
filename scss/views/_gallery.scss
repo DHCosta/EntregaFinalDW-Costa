@@ -45,7 +45,7 @@
     color: $font-color;
     border-bottom: solid 15px #212427;
 
-    grid-column: 4 / 12;
+    grid-column: 4 / 11;
     grid-row: 1;
 
     z-index: 10;
@@ -59,7 +59,7 @@
     color: $font-color;
     border-bottom: solid 15px #212427;
 
-    grid-column: 2 / 9;
+    grid-column: 2 / 10;
     grid-row: 1;
 
     z-index: 10;
@@ -82,7 +82,7 @@ main {
 }
 
 .cont_wnoesarte {
-    margin-top: -7rem;
+    margin-top: -5rem;
     grid-column: 5 / 12;
     grid-row: 5;
 
