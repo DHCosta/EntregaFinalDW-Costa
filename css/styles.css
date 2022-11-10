@@ -205,7 +205,7 @@ nav {
 .home_com {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: end;
   padding-left: 10rem; }
 
@@ -249,7 +249,7 @@ nav {
 
 .b_titulo_ab {
   font-size: 4rem;
-  font-weight: 700; }
+  font-weight: 900; }
 
 .b_cent_ab {
   border-top: solid 3px #212427;
@@ -297,33 +297,50 @@ nav {
   .work_sel .material-symbols-outlined {
     display: inline; }
 
-.b_titulo_w {
+.b_tit_wizq {
   font-size: 12rem;
   font-weight: 800;
   text-transform: uppercase;
   background: none;
   color: #212427;
   border-bottom: solid 15px #212427;
-  grid-column: 3 / 12;
+  grid-column: 4 / 12;
+  grid-row: 1;
+  z-index: 10; }
+
+.b_tit_wder {
+  font-size: 12rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: none;
+  color: #212427;
+  border-bottom: solid 15px #212427;
+  grid-column: 2 / 9;
   grid-row: 1;
   z-index: 10; }
 
 .det_w {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 1.8em; }
+  font-size: 1.2rem; }
 
 main {
   border-bottom: solid 10px #212427; }
 
 .container-grid {
-  padding-top: 14rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr)); }
 
 .cont_wnoesarte {
-  margin-top: -6rem;
+  margin-top: -7rem;
   grid-column: 5 / 12;
+  grid-row: 5;
+  z-index: 1; }
+
+.cont_wivanzim {
+  margin-top: -7rem;
+  grid-column: 2 / 12;
   grid-row: 5;
   z-index: 1; }
 
@@ -406,10 +423,10 @@ main {
     color: white;
     background-color: #d6d6d6; }
   .home_tit {
-    font-size: 5.5rem;
-    padding: 4rem 0; }
+    font-size: 5rem;
+    padding: 6rem 0; }
   .home_com {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     padding-left: 3rem; }
   .link_about {
     font-size: 1.2rem; }
@@ -430,4 +447,15 @@ main {
   .top {
     background: none; }
   .b_border {
-    border-right: none; } }
+    border-right: none; }
+  .bc_ppal {
+    padding-right: 2.5rem !important; }
+  .b_titulo_ab {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.5rem; }
+  .b_titulo_ct {
+    font-size: 11em;
+    line-height: 11rem; }
+  .b_sub_titulo_ct {
+    line-height: 4rem; } }

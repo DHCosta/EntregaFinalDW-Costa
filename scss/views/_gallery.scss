@@ -37,7 +37,7 @@
     }
 }
 
-.b_titulo_w{
+.b_tit_wizq{
     font-size: 12rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -45,7 +45,21 @@
     color: $font-color;
     border-bottom: solid 15px #212427;
 
-    grid-column: 3 / 12;
+    grid-column: 4 / 12;
+    grid-row: 1;
+
+    z-index: 10;
+}
+
+.b_tit_wder{
+    font-size: 12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: none;
+    color: $font-color;
+    border-bottom: solid 15px #212427;
+
+    grid-column: 2 / 9;
     grid-row: 1;
 
     z-index: 10;
@@ -54,7 +68,7 @@
 .det_w{
     font-family: $secondary-font;
     font-weight: 300;
-    font-size: 1.8em;
+    font-size: 1.2rem;
 }
 
 main {
@@ -62,16 +76,23 @@ main {
 }
 
 .container-grid {
-    padding-top: 14rem;
+    padding-top: 10rem;
     display: grid;
     grid-template-columns: repeat(12, minmax(0,1fr));
 }
 
 .cont_wnoesarte {
-    margin-top: -6rem;
+    margin-top: -7rem;
     grid-column: 5 / 12;
     grid-row: 5;
 
     z-index: 1;
 }
 
+.cont_wivanzim {
+    margin-top: -7rem;
+    grid-column: 2 / 12;
+    grid-row: 5;
+
+    z-index: 1;
+}

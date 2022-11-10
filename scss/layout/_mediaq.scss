@@ -60,11 +60,11 @@
     }
 
     .home_tit{
-        font-size: 5.5rem;
-        padding: 4rem 0;
+        font-size: 5rem;
+        padding: 6rem 0;
     }
     .home_com{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         padding-left: 3rem;
     }
     .link_about{
@@ -98,5 +98,23 @@
 
     .b_border {
         border-right: none;
+    }
+    .bc_ppal{
+        padding-right: 2.5rem !important;
+    }
+
+    .b_titulo_ab {
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 4.5rem;
+    }
+
+    .b_titulo_ct {
+        font-size: 11em;
+        line-height: 11rem;
+    }
+    
+    .b_sub_titulo_ct {
+        line-height: 4rem;
     }
   }
