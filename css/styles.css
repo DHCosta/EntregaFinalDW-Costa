@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -322,7 +323,7 @@ nav {
 
 .det_w {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.2rem; }
 
 main {
@@ -383,14 +384,20 @@ main {
 .txarea {
   height: 100px !important; }
 
-@media (max-width: 991px) {
-  .bs_cen {
-    background-color: #C46241; }
-  nav {
+/* 
+Extra small	        None	<576px
+Small	            sm	    ≥576px
+Medium	            md	    ≥768px
+Large	            lg	    ≥992px
+Extra large	        xl	    ≥1200px
+Extra extra large	xxl	    ≥1400px
+*/
+@media only screen and (max-width: 991px) {
+  body nav {
     justify-content: flex-end;
     padding-right: 6.5rem !important; }
-    nav ul {
-      z-index: 2;
+    body nav ul {
+      z-index: 100;
       position: absolute;
       top: 10rem;
       margin-top: 0px;
@@ -399,30 +406,66 @@ main {
       width: 100%;
       justify-content: center;
       align-items: center; }
-      nav ul li a::after {
+      body nav ul li a::after {
         display: none; }
-  .menu-button-container {
+  body .menu-button-container {
     display: flex; }
-  #menu-toggle ~ ul li {
+  body #menu-toggle ~ ul li {
     height: 0;
     margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     background: none; }
-  #menu-toggle:checked ~ ul li {
+  body #menu-toggle:checked ~ ul li {
     height: 5rem;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     background: none; }
-  ul li {
+  body ul li {
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
     color: white;
-    background-color: #d6d6d6; }
+    background-color: #d6d6d6; } }
+
+@media (max-width: 575px) {
+  .b_tit_wizq {
+    font-size: 11vw;
+    border-bottom: solid 8px #212427;
+    grid-column: 1 / 11;
+    grid-row: 1;
+    z-index: 2; }
+  .cont_wnoesarte {
+    margin-top: -3rem;
+    grid-column: 2 / 12;
+    grid-row: 5;
+    z-index: 1; }
+  .det_w {
+    font-size: 1.2rem;
+    padding-top: 12px; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .b_tit_wizq {
+    font-size: 12vw;
+    border-bottom: solid 10px #212427;
+    grid-column: 1 / 11;
+    grid-row: 1;
+    z-index: 2; }
+  .cont_wnoesarte {
+    margin-top: -4rem;
+    grid-column: 2 / 12;
+    grid-row: 5;
+    z-index: 1; }
+  .det_w {
+    font-size: 1.3rem;
+    padding-top: 12px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .bs_cen {
+    background-color: #C46241; }
   .home_tit {
     font-size: 5rem;
     padding: 6rem 0; }
@@ -459,4 +502,60 @@ main {
     font-size: 11rem;
     line-height: 11rem; }
   .b_sub_titulo_ct {
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  .b_tit_wizq {
+    font-size: 8vw;
+    border-bottom: solid 10px #212427;
+    grid-column: 3 / 11;
+    grid-row: 1;
+    z-index: 2; }
+  .cont_wnoesarte {
+    margin-top: -4rem;
+    grid-column: 4 / 11;
+    grid-row: 5;
+    z-index: 1; }
+  .det_w {
+    font-size: 1rem;
+    padding-left: 15px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .b_tit_wizq {
+    font-size: 7vw;
+    border-bottom: solid 10px #212427;
+    grid-column: 4 / 11;
+    grid-row: 1; }
+  .cont_wnoesarte {
+    margin-top: -5rem;
+    grid-column: 5 / 11;
+    grid-row: 5; }
+  .det_w {
+    font-size: 1.1rem;
+    padding-left: 15px; } }
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .b_tit_wizq {
+    font-size: 7vw;
+    border-bottom: solid 10px #212427;
+    grid-column: 4 / 11;
+    grid-row: 1; }
+  .cont_wnoesarte {
+    margin-top: -5rem;
+    grid-column: 5 / 11;
+    grid-row: 5; }
+  .det_w {
+    font-size: 1.1rem;
+    padding-left: 15px; } }
+
+@media (min-width: 1400px) {
+  .b_tit_wizq {
+    font-size: 6vw;
+    border-bottom: solid 12px #212427;
+    grid-column: 4 / 10;
+    grid-row: 1; }
+  .cont_wnoesarte {
+    margin-top: -5rem;
+    grid-column: 5 / 10;
+    grid-row: 5; }
+  .det_w {
+    font-size: 1.1rem;
+    padding-left: 15px; } }
