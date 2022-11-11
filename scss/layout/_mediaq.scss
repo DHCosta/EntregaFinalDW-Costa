@@ -308,12 +308,12 @@ body{
         font-size: 7vw;
         border-bottom: solid 10px #212427;
     
-        grid-column: 4 / 11;
+        grid-column: 5 / 12;
         grid-row: 1;
     }
     .cont_wnoesarte {
         margin-top: -5rem;
-        grid-column: 5 / 11;
+        grid-column: 6 / 12;
         grid-row: 5;
     }
     .det_w{
@@ -345,16 +345,34 @@ body{
         font-size: 6vw;
         border-bottom: solid 12px #212427;
     
-        grid-column: 4 / 10;
+        grid-column: 5 / 12;
         grid-row: 1;
     }
     .cont_wnoesarte {
         margin-top: -5rem;
-        grid-column: 5 / 10;
+        grid-column: 6 / 12;
         grid-row: 5;
     }
     .det_w{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         padding-left: 15px;
+    }
+
+    .b_tit_wder{
+        font-size: 6vw;
+        border-bottom: solid 12px #212427;
+    
+        grid-column: 2 / 9;
+        grid-row: 1;
+    }
+    .cont_wivanzim {
+        margin-top: -5rem;
+        grid-column: 2 / 8;
+        grid-row: 5;
+    }
+    .det_wd{
+        font-size: 1.5rem;
+        padding-right: 15px;
+        text-align: end;
     }
 }

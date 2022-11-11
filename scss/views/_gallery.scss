@@ -80,6 +80,9 @@ main {
     display: grid;
     grid-template-columns: repeat(12, minmax(0,1fr));
 }
+.padbot {
+    padding-bottom: 10rem;
+}
 
 .cont_wnoesarte {
     margin-top: -5rem;
