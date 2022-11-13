@@ -485,7 +485,9 @@ Extra extra large	xxl	    ≥1400px
     font-size: 11rem;
     line-height: 11rem; }
   body .b_sub_titulo_ct {
-    line-height: 4rem; } }
+    line-height: 4rem; }
+  body .b_border {
+    border-right: none; } }
 
 @media (max-width: 575px) {
   .home_tit {
@@ -611,8 +613,6 @@ Extra extra large	xxl	    ≥1400px
     display: inline; }
   .top {
     background: none; }
-  .b_border {
-    border-right: none; }
   .b_titulo_ab {
     font-size: 4rem;
     font-weight: 900;

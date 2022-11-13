@@ -91,6 +91,10 @@ body{
             .b_sub_titulo_ct {
                 line-height: 4rem;
             }
+
+            .b_border {
+                border-right: none;
+            }
 		}
     }
 }
@@ -278,10 +282,6 @@ body{
     }
     .top{
         background: none;
-    }
-
-    .b_border {
-        border-right: none;
     }
 
     .b_titulo_ab {
