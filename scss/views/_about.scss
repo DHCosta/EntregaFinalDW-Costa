@@ -14,15 +14,28 @@
 
 .b_titulo_ab{
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
+    line-height: 4rem;
+    span {
+        font-weight: 900;
+    }
+}
+
+.darcos{
+    color: $primary-color;
 }
 
 .b_cent_ab{
     @include border('top', 3px, $line-color);
     @include border('bottom', 3px, $line-color);
     font-family: $secondary-font;
-    font-size: 1.5rem;
+    font-size: 2rem;
     overflow-y: auto;
+    p{
+        span{
+            font-weight: 600;
+        }
+    }
 }
 
 .rect_inf{

@@ -68,12 +68,25 @@ body{
                     background-color: #d6d6d6;
                 }
             }
+
+            .gallery {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 30px;
+                > img {
+                    border: solid 6px #212427;
+                }
+            }
 		}
     }
 }
 
 //Extra small
 @media (max-width: 575px) {
+    .b_cent_ab{
+        font-size: 2.8vw;
+    }
     .b_tit_wizq{
         font-size: 11vw;
         border-bottom: solid 8px #212427;
@@ -115,10 +128,23 @@ body{
         padding-top: 12px;
         text-align: end;
     }
+    .titwork {
+        font-size: 5rem;
+        font-weight: 800;
+    }
+    .subtitwork {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding-bottom: 6rem;  
+    }
+    
 }
 
 //Small
 @media (min-width: 576px) and (max-width: 767px) {
+    .b_cent_ab{
+        font-size: 2.5vw;
+    }
     .b_tit_wizq{
         font-size: 12vw;
         border-bottom: solid 10px #212427;
@@ -160,10 +186,22 @@ body{
         padding-top: 12px;
         text-align: end;
     }
+
+    .titwork {
+        font-size: 6rem;
+    }
+    .subtitwork {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 6rem;  
+    }
 }
 
 //Medium
 @media (min-width: 768px) and (max-width: 991px) {
+    .b_cent_ab{
+        font-size: 2.2vw;
+    }
     .bs_cen{
         background-color: $primary-color;
     }
@@ -229,7 +267,7 @@ body{
 
     .b_tit_wizq{
         font-size: 8vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
         grid-column: 3 / 11;
         grid-row: 1;
@@ -249,14 +287,14 @@ body{
     }
     .b_tit_wder{
         font-size: 8vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
-        grid-column: 2 / 9;
+        grid-column: 3 / 11;
         grid-row: 1;
     }
     .cont_wivanzim {
         margin-top: -4rem;
-        grid-column: 2 / 8;
+        grid-column: 3 / 10;
         grid-row: 5;
     }
     .det_wd{
@@ -264,13 +302,23 @@ body{
         padding-right: 15px;
         text-align: end;
     }
+
+    .titwork {
+        font-size: 8rem;
+    }
+    .subtitwork {
+        font-size: 2rem;
+    }
 }
 
 //Large & >
 @media (min-width: 992px) and (max-width: 1199px) {
+    .b_cent_ab{
+        font-size: 2vw;
+    }
     .b_tit_wizq{
         font-size: 7vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
         grid-column: 4 / 11;
         grid-row: 1;
@@ -286,14 +334,14 @@ body{
     }
     .b_tit_wder{
         font-size: 7vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
-        grid-column: 2 / 9;
+        grid-column: 3 / 10;
         grid-row: 1;
     }
     .cont_wivanzim {
         margin-top: -5rem;
-        grid-column: 2 / 8;
+        grid-column: 3 / 9;
         grid-row: 5;
     }
     .det_wd{
@@ -304,16 +352,19 @@ body{
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
+    .b_cent_ab{
+        font-size: 1.5vw;
+    }
     .b_tit_wizq{
         font-size: 7vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
-        grid-column: 5 / 12;
+        grid-column: 4 / 11;
         grid-row: 1;
     }
     .cont_wnoesarte {
         margin-top: -5rem;
-        grid-column: 6 / 12;
+        grid-column: 5 / 11;
         grid-row: 5;
     }
     .det_w{
@@ -323,14 +374,14 @@ body{
 
     .b_tit_wder{
         font-size: 7vw;
-        border-bottom: solid 10px #212427;
+        @include border('bottom', 10px, $font-color);
     
-        grid-column: 2 / 9;
+        grid-column: 3 / 10;
         grid-row: 1;
     }
     .cont_wivanzim {
         margin-top: -5rem;
-        grid-column: 2 / 8;
+        grid-column: 3 / 9;
         grid-row: 5;
     }
     .det_wd{
@@ -341,16 +392,19 @@ body{
 }
 
 @media (min-width: 1400px) {
+    .b_cent_ab{
+        font-size: 1.5vw;
+    }
     .b_tit_wizq{
         font-size: 6vw;
-        border-bottom: solid 12px #212427;
+        @include border('bottom', 12px, $font-color);
     
-        grid-column: 5 / 12;
+        grid-column: 4 / 11;
         grid-row: 1;
     }
     .cont_wnoesarte {
         margin-top: -5rem;
-        grid-column: 6 / 12;
+        grid-column: 5 / 11;
         grid-row: 5;
     }
     .det_w{
@@ -360,14 +414,14 @@ body{
 
     .b_tit_wder{
         font-size: 6vw;
-        border-bottom: solid 12px #212427;
+        @include border('bottom', 12px, $font-color);
     
-        grid-column: 2 / 9;
+        grid-column: 3 / 10;
         grid-row: 1;
     }
     .cont_wivanzim {
         margin-top: -5rem;
-        grid-column: 2 / 8;
+        grid-column: 3 / 9;
         grid-row: 5;
     }
     .det_wd{
