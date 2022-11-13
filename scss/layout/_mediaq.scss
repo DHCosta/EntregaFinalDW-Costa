@@ -78,14 +78,39 @@ body{
                     border: solid 6px #212427;
                 }
             }
+
+            .bc_ppal{
+                padding-right: 3rem !important;
+            }
+
+            .b_titulo_ct {
+                font-size: 11rem;
+                line-height: 11rem;
+            }
+            
+            .b_sub_titulo_ct {
+                line-height: 4rem;
+            }
 		}
     }
 }
 
 //Extra small
 @media (max-width: 575px) {
+    .home_tit{
+        font-size: 4.5rem; 
+        padding: 6rem 0;
+    }
+    .home_com{
+        font-size: 1.1rem;
+        padding-left: 3rem;
+    }
+    .link_about{
+        font-size: 1.2rem;
+    }
+
     .b_cent_ab{
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
     .b_tit_wizq{
         font-size: 11vw;
@@ -154,6 +179,19 @@ body{
     
         z-index: 2;
     }
+
+    .home_tit{
+        font-size: 5rem;
+        padding: 6rem 0;
+    }
+    .home_com{
+        font-size: 1.1rem;
+        padding-left: 3rem;
+    }
+    .link_about{
+        font-size: 1.2rem;
+    }
+
     .cont_wnoesarte {
         margin-top: -4rem;
         grid-column: 3 / 11;
@@ -245,25 +283,12 @@ body{
     .b_border {
         border-right: none;
     }
-    .bc_ppal{
-        padding-right: 2.5rem !important;
-    }
 
     .b_titulo_ab {
         font-size: 4rem;
         font-weight: 900;
         line-height: 4.5rem;
     }
-
-    .b_titulo_ct {
-        font-size: 11rem;
-        line-height: 11rem;
-    }
-    
-    .b_sub_titulo_ct {
-        line-height: 4rem;
-    }
-
 
     .b_tit_wizq{
         font-size: 8vw;
